@@ -68,7 +68,7 @@ export class HelpCommand extends Command {
     }
 
     if (context.isDM && (context.sourceMessage.text.toLowerCase() !== "help")) {
-      context.replyPrivate(":crying_cat_face: Not sure what you mean... Use `help` to see the list of possible commands, or ask Amnebot.")
+      context.replyPrivate(":crying_cat_face: Not sure what you mean... Use `help` to see the list of possible commands, or ask AmneBot.")
     } else {
       context.replyPrivate({attachments: helpAttachments})
     }
